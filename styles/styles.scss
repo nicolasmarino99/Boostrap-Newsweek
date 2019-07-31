@@ -1,0 +1,105 @@
+$base-color: #f72210;
+
+body{
+    background-color: rgb(240, 240, 240);
+    font-family: "Roboto Condensed", sans-serif;
+    #container {
+        margin: 0 2.19em;
+        
+        /*beging navbar*/
+        nav {
+            position: relative;
+            background-color: $base-color;
+            color: white;
+            padding: 1em;
+            
+           
+            .align-text-bottom {
+                
+                margin-top: auto;
+                date {
+                    margin: 0;
+                }
+            }
+
+            a {
+                color: white;
+                font-size: 18px;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin: 1px;
+                padding: 0em .5em;
+            }
+
+            #a2 {
+                background-color: white;
+                color: $base-color; 
+                svg {
+                    
+                    width: 8px;
+                    height: 14px;
+                    margin-left: 5px;
+                   g {
+                    fill: #f72210;
+                   }
+                }
+            }
+               
+            
+            g {
+                fill: white;
+            }
+        }
+
+
+        .header-bottom {
+            position: absolute;
+            top: 5.8em;
+            left: 79.5em;
+            height: 16px;
+            width: 89px;
+            background-color: #f72210;
+            border-left: 21px solid white;
+            border-top: 16px solid #f72210;
+            z-index: 1100;
+            
+        }
+
+
+        #bar-with-anchors {
+            background-color: white;
+            display: flex;
+            font-size: 21px;
+            font-weight: 700;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 2px solid rgb(224, 224, 224);
+            
+
+            .col-sm {
+                padding: 0;
+                margin-top:0.5em;
+                margin-bottom:0.5em;
+            } 
+            
+            input {
+                width: 80px;
+            }
+            
+            a {
+                font-family: "Roboto Condensed",sans-serif;
+                border-right: 1px solid rgb(224, 224, 224);
+                color:black; 
+                display: flex;
+                align-items: center;
+                justify-content: center;
+               &:hover {
+                color: #f72210;
+                text-decoration: none;
+               }
+            }
+            
+        }
+        /*navbar ending*/
+    }
+}

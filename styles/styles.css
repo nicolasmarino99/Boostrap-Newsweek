@@ -1,0 +1,96 @@
+body {
+  background-color: #f0f0f0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+body #container {
+  margin: 0 2.19em;
+  /*beging navbar*/
+  /*navbar ending*/
+}
+body #container nav {
+  position: relative;
+  background-color: #f72210;
+  color: white;
+  padding: 1em;
+}
+body #container nav .align-text-bottom {
+  margin-top: auto;
+}
+body #container nav .align-text-bottom date {
+  margin: 0;
+}
+body #container nav a {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1px;
+  padding: 0em .5em;
+}
+body #container nav #a2 {
+  background-color: white;
+  color: #f72210;
+}
+body #container nav #a2 svg {
+  width: 8px;
+  height: 14px;
+  margin-left: 5px;
+}
+body #container nav #a2 svg g {
+  fill: #f72210;
+}
+body #container nav g {
+  fill: white;
+}
+body #container .header-bottom {
+  position: absolute;
+  top: 5.8em;
+  left: 79.5em;
+  height: 16px;
+  width: 89px;
+  background-color: #f72210;
+  border-left: 21px solid white;
+  border-top: 16px solid #f72210;
+  z-index: 1100;
+}
+body #container #bar-with-anchors {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 21px;
+  font-weight: 700;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 2px solid #e0e0e0;
+}
+body #container #bar-with-anchors .col-sm {
+  padding: 0;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+body #container #bar-with-anchors input {
+  width: 80px;
+}
+body #container #bar-with-anchors a {
+  font-family: "Roboto Condensed",sans-serif;
+  border-right: 1px solid #e0e0e0;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body #container #bar-with-anchors a:hover {
+  color: #f72210;
+  text-decoration: none;
+}
