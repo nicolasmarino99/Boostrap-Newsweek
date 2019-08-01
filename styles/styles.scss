@@ -1,11 +1,21 @@
 $base-color: #f72210;
+$gray-color: rgb(224, 224, 224);
+%guide {
+    border: 2px solid white;
+}
 
 body{
-    background-color: rgb(240, 240, 240);
+    background-color: $gray-color;
     font-family: "Roboto Condensed", sans-serif;
     #container {
         margin: 0 2.19em;
-        
+        a {
+            color: black;
+        }
+        a:hover {
+            color: #f72210;
+            text-decoration: none;
+           }
         /*beging navbar*/
         nav {
             position: relative;
@@ -73,7 +83,7 @@ body{
             font-weight: 700;
             align-items: center;
             justify-content: center;
-            border-bottom: 2px solid rgb(224, 224, 224);
+            border-bottom: 2px solid $gray-color;
             
 
             .col-sm {
@@ -88,18 +98,50 @@ body{
             
             a {
                 font-family: "Roboto Condensed",sans-serif;
-                border-right: 1px solid rgb(224, 224, 224);
+                border-right: 1px solid $gray-color;
                 color:black; 
                 display: flex;
                 align-items: center;
                 justify-content: center;
-               &:hover {
-                color: #f72210;
-                text-decoration: none;
-               }
+               
             }
             
         }
         /*navbar ending*/
+        /*main aside begining*/
+        #aside-main-aside {
+            background-color: white;
+            margin: 0 -.99em;
+            padding: 1em 3em;
+            div {
+                padding: 0;
+                @extend %guide;
+                h2 {
+                    font-size: 15px;
+                    color: rgb(170, 170, 170);
+                    font-weight: bold;
+                }
+                h4 {
+                    font-weight: bold;
+                }
+                img {
+                    margin-bottom: 500px;
+                    width: 100%
+                    
+                }
+            } 
+            .row {
+                margin-right: 0px;
+                margin-left: 0px;
+            }
+            #culture-travel {
+                background: $gray-color;
+                border-color: $gray-color;
+            }
+            
+        }
+
+
+        /*main aside ending*/
     }
 }

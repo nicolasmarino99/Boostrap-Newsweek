@@ -1,11 +1,24 @@
+body #container #aside-main-aside div {
+  border: 2px solid white;
+}
+
 body {
-  background-color: #f0f0f0;
+  background-color: #e0e0e0;
   font-family: "Roboto Condensed", sans-serif;
 }
 body #container {
   margin: 0 2.19em;
   /*beging navbar*/
   /*navbar ending*/
+  /*main aside begining*/
+  /*main aside ending*/
+}
+body #container a {
+  color: black;
+}
+body #container a:hover {
+  color: #f72210;
+  text-decoration: none;
 }
 body #container nav {
   position: relative;
@@ -90,7 +103,31 @@ body #container #bar-with-anchors a {
       -ms-flex-pack: center;
           justify-content: center;
 }
-body #container #bar-with-anchors a:hover {
-  color: #f72210;
-  text-decoration: none;
+body #container #aside-main-aside {
+  background-color: white;
+  margin: 0 -.99em;
+  padding: 1em 3em;
+}
+body #container #aside-main-aside div {
+  padding: 0;
+}
+body #container #aside-main-aside div h2 {
+  font-size: 15px;
+  color: #aaaaaa;
+  font-weight: bold;
+}
+body #container #aside-main-aside div h4 {
+  font-weight: bold;
+}
+body #container #aside-main-aside div img {
+  margin-bottom: 500px;
+  width: 100%;
+}
+body #container #aside-main-aside .row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+body #container #aside-main-aside #culture-travel {
+  background: #e0e0e0;
+  border-color: #e0e0e0;
 }
