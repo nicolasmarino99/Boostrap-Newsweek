@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <title>messing with boostrap</title>
+    <link rel="shortcut icon" href="https://g.newsweek.com/themes/newsweek/favicon.ico">
+    <title>Newsweek - News, Analysis, Politics, Business, Technology</title>
 </head>
 <body>
 
 
     <div id="container">
+        <!--navigator begining--->
         <nav class="row">
             <div class="col align-text-bottom"><date>Mon, Jul 29, 2019</date></div>
             <div class="col">
@@ -27,7 +28,7 @@
             </div>
             <div class="col text-right align-text-bottom">
                 <a id="a1" href="#">sign in</a>
-                <a id="a2" href="#">subscribe 
+                <a class="a2" href="#">subscribe 
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8 14" style="enable-background:new 0 0 8 14;" xml:space="preserve"><g id="arrow-right">
                         <defs>
                         <rect id="SVGID_1_" width="8" height="14"></rect>
@@ -64,13 +65,16 @@
             </div>
             
         </div>
+        <!--navigator ending--->
         <div class="w-100"></div>
+        <!--main begining--->
         <main id="aside-main-aside">
-            <div class="row">
-                <div class="col">
+            <div class="row" id="mainContainer">
+                <div class="col" id="FeaturedStories">
                     <h2>FEATURED STORIES</h2>
-                    <div class="col">
+                    <div class="col" >
                         <div class="col imgs" style="margin-bottom: 224px; margin-right: 7px;">
+                            <div class="category"><a href="#">analysis</a></div>
                             <img data-src="https://d.newsweek.com/en/full/1511786/newsweek-momentum-awards-2019.png?w=397&amp;h=265&amp;q=90&amp;f=b5bee11f8b144487ff291880f4d318be" alt="The Newsweek Momentum Awards 2019" title="The Newsweek Momentum Awards 2019" width="397" height="265" class="mapping-sm_md lazysize lazyloaded" src="https://d.newsweek.com/en/full/1511786/newsweek-momentum-awards-2019.png?w=397&amp;h=265&amp;q=90&amp;f=b5bee11f8b144487ff291880f4d318be" style="position: absolute;width: 336px;height: 226px;">
                         </div>
                         
@@ -79,6 +83,7 @@
                     </div>
                     <div class="col">
                         <div class="col imgs" style="margin-bottom: 224px; margin-right: 7px;">
+                                <div class="category"><a href="#">news</a></div>
                             <img data-src="https://d.newsweek.com/en/full/1511786/newsweek-momentum-awards-2019.png?w=397&amp;h=265&amp;q=90&amp;f=b5bee11f8b144487ff291880f4d318be" alt="The Newsweek Momentum Awards 2019" title="The Newsweek Momentum Awards 2019" width="397" height="265" class="mapping-sm_md lazysize lazyloaded" src="https://d.newsweek.com/en/full/1516199/elizabeth-warren-democratic-presidential-debate-college.jpg?w=397&h=265&q=90&f=7b03fb1bfc76894efed269f511b5cd89" style="position: absolute;width: 336px;height: 226px;">
                         </div>
                         <div class="col"><a href="#"><h4>Elizabeth Warren Wins Over College Students During Democratic Debate</h4></a></div>
@@ -87,13 +92,16 @@
                     </div>
                     <div class="col">
                         <div class="col imgs" style="margin-bottom: 224px; margin-right: 7px;">
+                            <div class="category"><a href="#">news</a></div>
                             <img data-src="https://d.newsweek.com/en/full/1511786/newsweek-momentum-awards-2019.png?w=397&amp;h=265&amp;q=90&amp;f=b5bee11f8b144487ff291880f4d318be" alt="The Newsweek Momentum Awards 2019" title="The Newsweek Momentum Awards 2019" width="397" height="265" class="mapping-sm_md lazysize lazyloaded" src="https://d.newsweek.com/en/full/1516014/tech-stocks-drag-stocks-down-sharply.jpg?w=397&h=265&q=90&f=650d6da452b00a55d3e845f66e50e7ff" style="position: absolute;width: 336px;height: 226px;">
                         </div>
                         
                         <div class="col"><a href="#"><h4>Americans Sour on Big Tech, Remain Deeply Divided on Key Institutions</h4></a></div>
                         <div class="col"><p>Only 50 percent of adults think tech companies have a positive impact on society, compared with 71 percent just four years ago.</p></div>
                     </div>
-                    <div class="col"><div class="col imgs" style="margin-bottom: 224px; margin-right: 7px;">
+                    <div class="col">
+                        <div class="col imgs" style="margin-bottom: 224px; margin-right: 7px;">
+                            <div class="category"><a href="#">editor´s notes</a></div>
                             <img data-src="https://d.newsweek.com/en/full/1511786/newsweek-momentum-awards-2019.png?w=397&amp;h=265&amp;q=90&amp;f=b5bee11f8b144487ff291880f4d318be" alt="The Newsweek Momentum Awards 2019" title="The Newsweek Momentum Awards 2019" width="397" height="265" class="mapping-sm_md lazysize lazyloaded" src="https://d.newsweek.com/en/full/1511669/spot-im-logo.png?w=397&h=265&q=90&f=fe63931482a6ab2a1825bd5559fc3c72" style="position: absolute;width: 336px;height: 226px;">
                         </div>
                         
@@ -101,23 +109,25 @@
                         <div class="col"><p>We always want to hear from you, and to make that easier, we've implemented a new commenting forum. Take a look at the bottom of Newsweek articles. Spot.IM is a tool that helps readers respond to our stories and communicate with one another—and with us. Ask us a question, embed a GIF, point out a mistake. Be civil and respectful, please. And most important: Be in touch.</p></div>
                     </div>
                 </div>
-                <div class="col-5" style="left: 41px;">
+                
+                <div class="col-5" id="topStory">
                     <h2>TOP STORY</h2>  
-                    <div class="col" id="top">
-                            <div class="col imgs" style="margin-bottom: 312px;">
+                    <div class="col">
+                        <div class="col imgs" style="margin-bottom: 312px;">
+                            <div class="category"><a href="#">editor´s notes</a></div>
                             <img data-src="https://d.newsweek.com/en/full/1516214/hhs-secretary-alex-azar-opioid-summit.jpg?w=591&amp;h=364&amp;q=90&amp;f=c0490d4e41421457396b1f797fcec078" alt="hhs secretary alex azar opioid summit" title="hhs secretary alex azar opioid summit" width="511" height="324" class="mapping-md lazysize lazyloaded" src="https://d.newsweek.com/en/full/1516214/hhs-secretary-alex-azar-opioid-summit.jpg?w=591&amp;h=364&amp;q=90&amp;f=c0490d4e41421457396b1f797fcec078" style="position: absolute;margin-bottom: 502px;width: 506px;height: 311px;margin-left: 0px;">
                         </div>
                         
                         <div class="col"><a href="#"><h4>Trump Administration Proposes Allowing Importation of Cheaper Drugs From Canada</h4></a></div>
                         <div class="col"><p>"For too long American patients have been paying exorbitantly high prices for prescription drugs that are made available to other countries at lower prices," Health and Human Services Secretary Alex Azar said in a statement Wednesday.</p></div>
                     </div>
-                    <div class="col section" id="culture-travel">
+                    <div class="col" id="culture-travel">
                         <h2>CULTURE & TRAVEL</h2>
                         
                             <div class="row left">
                                 <div class="col-sm">
                                     <div class="col imgs" style="margin-bottom: 156px;">
-                                        <img data-src="https://d.newsweek.com/en/full/1515696/genever.jpg?w=397&amp;h=265&amp;f=49859a5df7b0ceb2bcd2f8b4b7b9aa9a" alt="Genever" title="Genever" width="397" height="265" class="mapping-mobile lazysize lazyloaded" style="position: absolute; height: 160px;" src="https://d.newsweek.com/en/full/1515696/genever.jpg?w=397&amp;h=265&amp;f=49859a5df7b0ceb2bcd2f8b4b7b9aa9a">
+                                        <img data-src="https://d.newsweek.com/en/full/1515696/genever.jpg?w=397&amp;h=265&amp;f=49859a5df7b0ceb2bcd2f8b4b7b9aa9a" alt="Genever" title="Genever" width="230" height="265" class="mapping-mobile lazysize lazyloaded" style="position: absolute; height: 160px;" src="https://d.newsweek.com/en/full/1515696/genever.jpg?w=397&amp;h=265&amp;f=49859a5df7b0ceb2bcd2f8b4b7b9aa9a">
                                     </div>
                                     <div class="col"><a href="#"><h5>7 Best Cocktail Bars in Los Angeles</h5></a></div>
                                     <div class="col"><p>Los Angeles has quickly become one of the best cocktail cities in America and has the bars to prove it.</p></div>
@@ -126,7 +136,7 @@
                                 </div>
                                 <div class="col-sm">
                                     <div class="col imgs" style="margin-bottom: 156px;">
-                                            <img data-src="https://d.newsweek.com/en/full/1515696/genever.jpg?w=397&amp;h=265&amp;f=49859a5df7b0ceb2bcd2f8b4b7b9aa9a" alt="Genever" title="Genever" width="397" height="265" class="mapping-mobile lazysize lazyloaded" style="position: absolute; height: 160px;" src="https://d.newsweek.com/en/full/1515608/meteor-shooting-star.jpg?w=397&h=265&f=1f4f4b18d87b3236fdc25b0f5e94054d">
+                                            <img data-src="https://d.newsweek.com/en/full/1515696/genever.jpg?w=397&amp;h=265&amp;f=49859a5df7b0ceb2bcd2f8b4b7b9aa9a" alt="Genever" title="Genever" width="230" height="265" class="mapping-mobile lazysize lazyloaded" style="position: absolute; height: 160px;" src="https://d.newsweek.com/en/full/1515608/meteor-shooting-star.jpg?w=397&h=265&f=1f4f4b18d87b3236fdc25b0f5e94054d">
                                     </div>
                                     <div class="col"><a href="#"><h5>Ancient Egypt: Underwater Archaeologists Find Temple Ruins in Sunken City</h5></a></div>
                                     <div class="col"><p>Researchers also found treasures like jewelry and coins in the remains of ancient shipwrecks.</p></div>
@@ -137,7 +147,7 @@
                             <div class="row">
                                 <div class="col-sm">
                                     <div class="col imgs" style="margin-bottom: 156px;">
-                                        <img data-src="https://d.newsweek.com/en/full/1515696/genever.jpg?w=397&amp;h=265&amp;f=49859a5df7b0ceb2bcd2f8b4b7b9aa9a" alt="Genever" title="Genever" width="397" height="265" class="mapping-mobile lazysize lazyloaded" style="position: absolute; height: 160px;" src="https://d.newsweek.com/en/full/1513906/cul-books-01-748319631.jpg?w=397&h=265&f=a76b1f70348747e4d543c615e152e7f7">
+                                        <img data-src="https://d.newsweek.com/en/full/1515696/genever.jpg?w=397&amp;h=265&amp;f=49859a5df7b0ceb2bcd2f8b4b7b9aa9a" alt="Genever" title="Genever" width="230" height="265" class="mapping-mobile lazysize lazyloaded" style="position: absolute; height: 160px;" src="https://d.newsweek.com/en/full/1513906/cul-books-01-748319631.jpg?w=397&h=265&f=a76b1f70348747e4d543c615e152e7f7">
                                     </div>
                                     <div class="col"><a href="#"><h5>Aquariid Southern Delta Meteor Shower: How to Watch Tonight</h5></a></div>
                                     <div class="col"><p>Meteor showers are celestial events in which several shooting stars can be seen in the night sky, appearing to originate from a single point.</p></div>
@@ -146,7 +156,7 @@
                                 </div>
                                 <div class="col-sm">
                                     <div class="col imgs" style="margin-bottom: 156px;">
-                                        <img data-src="https://d.newsweek.com/en/full/1515696/genever.jpg?w=397&amp;h=265&amp;f=49859a5df7b0ceb2bcd2f8b4b7b9aa9a" alt="Genever" title="Genever" width="397" height="265" class="mapping-mobile lazysize lazyloaded" style="position: absolute; height: 160px;" src="https://d.newsweek.com/en/full/1515696/genever.jpg?w=397&amp;h=265&amp;f=49859a5df7b0ceb2bcd2f8b4b7b9aa9a">
+                                        <img data-src="https://d.newsweek.com/en/full/1515696/genever.jpg?w=397&amp;h=265&amp;f=49859a5df7b0ceb2bcd2f8b4b7b9aa9a" alt="Genever" title="Genever" width="230" height="265" class="mapping-mobile lazysize lazyloaded" style="position: absolute; height: 160px;" src="https://d.newsweek.com/en/full/1515696/genever.jpg?w=397&amp;h=265&amp;f=49859a5df7b0ceb2bcd2f8b4b7b9aa9a">
                                     </div>
                                     <div class="col"><a href="#"><h5>30 Last Chance Beach Reads for Summer 2019</h5></a></div>
                                     <div class="col"><p>Dive into a new world of literature with Newsweek's top 30 picks to read during these final lazy, hazy, crazy days of summer.</p></div>
@@ -157,42 +167,248 @@
                         
                     </div>
                     
-                    <div class="col section">
+                    <div class="col" id="moreStories">
                         <h2>MORE STORIES</h2>
-                        <div class="col">empty space</div>
-                        <div class="col">empty space</div>
-                        <div class="col">empty space</div>
-                        <div class="col">empty space</div>
-                        <div class="col">empty space</div>
-                        <div class="col">empty space</div>
-                        <div class="col">empty space</div>
-                        <div class="col">empty space</div>
+                        <div class="row section">
+                            <div class="col">
+                                <img data-src="https://d.newsweek.com/en/full/1516396/joe-biden-debate.jpg?w=135&amp;h=90&amp;f=efe89b2e37e9f428d3b399666b84142d" alt="Joe Biden debate" title="Joe Biden debate" width="135" height="90" class="mapping-sm_thumb lazysize lazyloaded" style="position: absolute;" src="https://d.newsweek.com/en/full/1516396/joe-biden-debate.jpg?w=135&amp;h=90&amp;f=efe89b2e37e9f428d3b399666b84142d"></div>
+                            <div class="col-8">
+                                <div class="row"><h5><a href="#">Bye-Bye, Biden: The Former Vice President Isn't Out, but He's Down</a></h5></div>
+                                <div class="row"><p>Before the debate began, Joe Biden even told Senator Kamala Harris to "Go easy on me, kid."</p></div>
+                            </div>
+                        </div>
+                        <div class="row section">
+                            <div class="col"><img data-src="https://d.newsweek.com/en/full/1516599/ahmed-hussen.jpg?w=135&amp;h=90&amp;f=3382b86ec930e014d2cb1d56bbcf1704" alt="Ahmed Hussen" title="Ahmed Hussen" width="135" height="90" class="mapping-sm_thumb lazysize lazyloaded" style="position: absolute;" src="https://d.newsweek.com/en/full/1516599/ahmed-hussen.jpg?w=135&amp;h=90&amp;f=3382b86ec930e014d2cb1d56bbcf1704"></div>
+                            <div class="col-8">
+                                <div class="row"><h5><a href="#">Canada's Immigration Minister Addresses Tackling Rise of 'Anti-immigrant' Rhetoric</a></h5></div>
+                                <div class="row"><p>Before the debate began, Joe Biden even told Senator Kamala Harris to "Go easy on me, kid."</p></div>
+                            </div>
+                        </div>
+                        <div class="row section">
+                            <div class="col"><img data-src="https://d.newsweek.com/en/full/1516441/goma.jpg?w=135&amp;h=90&amp;f=7ebe0e7e6afe37713d45320a5f609b29" alt="Goma " title="Goma " width="135" height="90" class="mapping-sm_thumb lazysize lazyloaded" style="position: absolute;" src="https://d.newsweek.com/en/full/1516441/goma.jpg?w=135&amp;h=90&amp;f=7ebe0e7e6afe37713d45320a5f609b29"></div>
+                            <div class="col-8">
+                                <div class="row"><h5><a href="#">Rwanda Shuts Border With DRC Amid Ebola Outbreak</a></h5></div>
+                                <div class="row"><p>Before the debate began, Joe Biden even told Senator Kamala Harris to "Go easy on me, kid."</p></div>
+                            </div>
+                        </div>
+                        <div class="row section">
+                            <div class="col"><img data-src="https://d.newsweek.com/en/full/1516403/tulsi-gabbard-kamala-harris-cnn-debate.jpg?w=135&amp;h=90&amp;f=3ed756ca0ec7dfdaae4fa9adc6b1ea07" alt="Tulsi Gabbard Kamala Harris CNN debate" title="Tulsi Gabbard Kamala Harris CNN debate" width="135" height="90" class="mapping-sm_thumb lazysize lazyloaded" style="position: absolute;" src="https://d.newsweek.com/en/full/1516403/tulsi-gabbard-kamala-harris-cnn-debate.jpg?w=135&amp;h=90&amp;f=3ed756ca0ec7dfdaae4fa9adc6b1ea07"></div>
+                            <div class="col-8">
+                                <div class="row"><h5><a href="#">Tulsi Gabbard Responds to Kamala Harris' 'Assad Apologist' Comment</a></h5></div>
+                                <div class="row"><p>Before the debate began, Joe Biden even told Senator Kamala Harris to "Go easy on me, kid."</p></div>
+                            </div>
+                        </div>
+                        <div class="row section">
+                            <div class="col">
+                                <img data-src="https://d.newsweek.com/en/full/1516421/kentucky.jpg?w=135&amp;h=90&amp;f=97e571164cb3894f7a1b6c20486b399d" alt="kentucky " title="kentucky " width="135" height="90" class="mapping-sm_thumb lazysize lazyloaded" style="position: absolute;" src="https://d.newsweek.com/en/full/1516421/kentucky.jpg?w=135&amp;h=90&amp;f=97e571164cb3894f7a1b6c20486b399d">
+                            </div>
+                            <div class="col-8">
+                                <div class="row"><h5><a href="#">Kentucky Gas Explosion Kills at Least One, Residents Evacuated</a></h5>
+                                    <div class="row">
+                                        <p>Before the debate began, Joe Biden even told Senator Kamala Harris to "Go easy on me, kid."</p></div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="row section">
+                            <div class="col"><img data-src="https://d.newsweek.com/en/full/1516421/kentucky.jpg?w=135&amp;h=90&amp;f=97e571164cb3894f7a1b6c20486b399d" alt="kentucky " title="kentucky " width="135" height="90" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1516373/ben-carson.jpg?w=135&h=90&f=50875a2c8d482e938214003bf2d213c0" style="position: absolute;"></div>
+                            <div class="col-8">
+                                <div class="row"><h5><a href="#">Ben Carson Defends Trump's Remarks, Compares Baltimore to Cancer Patient</a></h5></div>
+                                <div class="row"><p>Before the debate began, Joe Biden even told Senator Kamala Harris to "Go easy on me, kid."</p></div>
+                            </div>
+                        </div>
+                        <div class="row section">
+                            <div class="col"><img data-src="https://d.newsweek.com/en/full/1516363/iran-foreign-minister-mohammad-zarif.jpg?w=135&amp;h=90&amp;f=4df3e8280b9b5c372e62d4e1c0716c33" alt="iran foreign minister mohammad zarif" title="iran foreign minister mohammad zarif" width="135" height="90" class="mapping-sm_thumb lazysize lazyloaded" style="position: absolute;" src="https://d.newsweek.com/en/full/1516363/iran-foreign-minister-mohammad-zarif.jpg?w=135&amp;h=90&amp;f=4df3e8280b9b5c372e62d4e1c0716c33"></div>
+                            <div class="col-8">
+                                <div class="row"><h5><a href="#">Iran's Top Diplomat After Sanctions: 'Is the Truth Really That Painful?'</a></h5></div>
+                                <div class="row"><p>Before the debate began, Joe Biden even told Senator Kamala Harris to "Go easy on me, kid."</p></div>
+                            </div>
+                        </div>
+                        <div class="row section">
+                            <div class="col"><img data-src="https://d.newsweek.com/en/full/1516563/gary-cohn-trump-china-trade-war.jpg?w=135&amp;h=90&amp;l=0&amp;t=0&amp;f=62155f25438cb0cf644989a6b852f3cb" alt="gary cohn trump china trade war" title="gary cohn trump china trade war" width="135" height="90" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1516563/gary-cohn-trump-china-trade-war.jpg?w=135&amp;h=90&amp;l=0&amp;t=0&amp;f=62155f25438cb0cf644989a6b852f3cb" style="position: absolute;"></div>
+                            <div class="col-8">
+                                <div class="row"><h5><a href="#">Trump's Former Chief Economic Adviser Says China Trade War Has Backfired</a></h5></div>
+                                <div class="row"><p>Before the debate began, Joe Biden even told Senator Kamala Harris to "Go easy on me, kid."</p></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col" style="margin-left: 26px; left: 56px;">
+                <div class="col" id="opinion" >
                     <h2>OPINION</h2>
                     <div class="col" id="opinions">
-                        <div class="col opinion">empty space</div>
-                        <div class="col opinion">empty space</div>
-                        <div class="col opinion">empty space</div>
-                        <div class="col opinion">empty space</div>
-                        <div class="col opinion">empty space</div>
-                        <div class="col opinion">empty space</div>
+                        <div class="row opinion">
+                            <div class="col imgs-opinion"><img data-src="https://d.newsweek.com/en/full/1516386/nicole-king.png?w=63&amp;h=63&amp;f=c3493a9dd090b26c1323bab051033e13" alt="Nicole King" title="Nicole King" width="63" height="63" class="lazyloaded" src="https://d.newsweek.com/en/full/1516386/nicole-king.png?w=63&amp;h=63&amp;f=c3493a9dd090b26c1323bab051033e13"></div>
+                            <div class="col-9">
+                                <div class="row">There's Only One Way the Crisis Here in Hong Kong Can Be Resolved</div>
+                                <div class="row"> <span class="author">BY DAVID ZWEIG</span> </div>
+                            </div>
+                        </div>
+                        <div class="row opinion">
+                            <div class="col imgs-opinion"><img data-src="https://d.newsweek.com/en/full/1516386/nicole-king.png?w=63&amp;h=63&amp;f=c3493a9dd090b26c1323bab051033e13" alt="Nicole King" title="Nicole King" width="63" height="63" class="lazyloaded" src="https://d.newsweek.com/en/full/1516249/david-zweig.png?w=63&h=63&f=7b610e820eb7833dc3990514f4177dc1"></div>
+                            <div class="col-9">
+                                <div class="row">There's Only One Way the Crisis Here in Hong Kong Can Be Resolved</div>
+                                <div class="row"> <span class="author">BY DAVID ZWEIG</span> </div>
+                            </div>
+                        </div>
+                        <div class="row opinion">
+                            <div class="col imgs-opinion"><img data-src="https://d.newsweek.com/en/full/1516386/nicole-king.png?w=63&amp;h=63&amp;f=c3493a9dd090b26c1323bab051033e13" alt="Nicole King" title="Nicole King" width="63" height="63" class="lazyloaded" src="https://d.newsweek.com/en/full/110995/richard-saenz.png?w=63&h=63&f=6b32673ef695f1dc6f90e1bb27e1c9a3"></div>
+                            <div class="col-9">
+                                <div class="row">There's Only One Way the Crisis Here in Hong Kong Can Be Resolved</div>
+                                <div class="row"> <span class="author">BY DAVID ZWEIG</span> </div>
+                            </div>
+                        </div>
+                        <div class="row opinion">
+                            <div class="col imgs-opinion"><img data-src="https://d.newsweek.com/en/full/1516386/nicole-king.png?w=63&amp;h=63&amp;f=c3493a9dd090b26c1323bab051033e13" alt="Nicole King" title="Nicole King" width="63" height="63" class="lazyloaded" src="https://d.newsweek.com/en/full/83499/newt-gingrich.png?w=63&h=63&l=48&t=55&f=d8b4f8dfaad8a5f0f71bffcc6c0d6a77"></div>
+                            <div class="col-9">
+                                <div class="row">There's Only One Way the Crisis Here in Hong Kong Can Be Resolved</div>
+                                <div class="row"> <span class="author">BY DAVID ZWEIG</span> </div>
+                            </div>
+                        </div>
+                        <div class="row opinion">
+                            <div class="col imgs-opinion"><img data-src="https://d.newsweek.com/en/full/1516386/nicole-king.png?w=63&amp;h=63&amp;f=c3493a9dd090b26c1323bab051033e13" alt="Nicole King" title="Nicole King" width="63" height="63" class="lazyloaded" src="https://d.newsweek.com/en/full/1508047/heather-thompson-day.png?w=63&h=63&f=e6cf73755fc913072f258274fe9ee2d4"></div>
+                            <div class="col-9">
+                                <div class="row">There's Only One Way the Crisis Here in Hong Kong Can Be Resolved</div>
+                                <div class="row"> <span class="author">BY DAVID ZWEIG</span> </div>
+                            </div>
+                        </div>
+                        <div class="row opinion">
+                            <div class="col imgs-opinion"><img data-src="https://d.newsweek.com/en/full/1516386/nicole-king.png?w=63&amp;h=63&amp;f=c3493a9dd090b26c1323bab051033e13" alt="Nicole King" title="Nicole King" width="63" height="63" class="lazyloaded" src="https://d.newsweek.com/en/full/1515877/jeff-clements.png?w=63&h=63&f=3bf0202105aa780be072f9f440e85255"></div>
+                            <div class="col-9">
+                                <div class="row">There's Only One Way the Crisis Here in Hong Kong Can Be Resolved</div>
+                                <div class="row"> <span class="author">BY DAVID ZWEIG</span> </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col" id="news-section">
+                    <div class="col" id="latestNews">
                         <h2>LATEST NEWS</h2>
-                        <div class="col news">empty space</div>
-                        <div class="col news">empty space</div>
-                        <div class="col news">empty space</div>
-                        <div class="col news">empty space</div>
-                        <div class="col news">empty space</div>
-                        <div class="col news">empty space</div>
-                        <div class="col news">empty space</div>
+                        <div class="row news">
+                            <div class="col"><img data-src="https://d.newsweek.com/en/full/1516563/gary-cohn-trump-china-trade-war.jpg?w=135&amp;h=90&amp;l=0&amp;t=0&amp;f=62155f25438cb0cf644989a6b852f3cb" alt="gary cohn trump china trade war" title="gary cohn trump china trade war" width="135" height="90" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1516620/liberal-groups-pressure-democrats-impeachment.jpg?w=397&h=265&f=20dd8bb91f728107ffde12100d0267f4" style="position: absolute;"></div>
+                            <div class="col-7">
+                                <div class="row"><h7><a href="#">Trump's Former Chief Economic Adviser Says China Trade War Has Backfired</a></h7></div>
+                                
+                            </div>
+                        </div>
+                        <div class="row news">
+                            <div class="col"><img data-src="https://d.newsweek.com/en/full/1516563/gary-cohn-trump-china-trade-war.jpg?w=135&amp;h=90&amp;l=0&amp;t=0&amp;f=62155f25438cb0cf644989a6b852f3cb" alt="gary cohn trump china trade war" title="gary cohn trump china trade war" width="135" height="90" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1516632/zodiac-movie-2007.jpg?w=397&h=265&f=bd0bfa85754848543efd05d5ba31b744" style="position: absolute;"></div>
+                            <div class="col-7">
+                                <div class="row"><h7><a href="#">Trump's Former Chief Economic Adviser Says China Trade War Has Backfired</a></h7></div>
+                                
+                            </div>
+                        </div>
+                        <div class="row news">
+                            <div class="col"><img data-src="https://d.newsweek.com/en/full/1516563/gary-cohn-trump-china-trade-war.jpg?w=135&amp;h=90&amp;l=0&amp;t=0&amp;f=62155f25438cb0cf644989a6b852f3cb" alt="gary cohn trump china trade war" title="gary cohn trump china trade war" width="135" height="90" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1516602/tomi-lahren-kamala-harris.jpg?w=397&h=265&f=acd8e1e64fd6b104405aa40acaae0819" style="position: absolute;"></div>
+                            <div class="col-7">
+                                <div class="row"><h7><a href="#">Trump's Former Chief Economic Adviser Says China Trade War Has Backfired</a></h7></div>
+                                
+                            </div>
+                        </div>
+                        <div class="row news">
+                            <div class="col"><img data-src="https://d.newsweek.com/en/full/1516563/gary-cohn-trump-china-trade-war.jpg?w=135&amp;h=90&amp;l=0&amp;t=0&amp;f=62155f25438cb0cf644989a6b852f3cb" alt="gary cohn trump china trade war" title="gary cohn trump china trade war" width="135" height="90" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1516606/julia-louis-dreyfus-jokes-she-may-marianne-williamsons-running-mate.png?w=397&h=265&f=7e9f1d678e993102a69570a038f4ac2a" style="position: absolute;"></div>
+                            <div class="col-7">
+                                <div class="row"><h7><a href="#">Trump's Former Chief Economic Adviser Says China Trade War Has Backfired</a></h7></div>
+                                
+                            </div>
+                        </div>
+                        <div class="row news">
+                            <div class="col"><img data-src="https://d.newsweek.com/en/full/1516563/gary-cohn-trump-china-trade-war.jpg?w=135&amp;h=90&amp;l=0&amp;t=0&amp;f=62155f25438cb0cf644989a6b852f3cb" alt="gary cohn trump china trade war" title="gary cohn trump china trade war" width="135" height="90" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1516591/wasp-121b.png?w=397&h=265&f=286c47e560677ff10b00373b387f42e1" style="position: absolute;"></div>
+                            <div class="col-7">
+                                <div class="row"><h7><a href="#">Trump's Former Chief Economic Adviser Says China Trade War Has Backfired</a></h7></div>
+                                
+                            </div>
+                        </div>
+                        <div class="row news">
+                            <div class="col"><img data-src="https://d.newsweek.com/en/full/1516563/gary-cohn-trump-china-trade-war.jpg?w=135&amp;h=90&amp;l=0&amp;t=0&amp;f=62155f25438cb0cf644989a6b852f3cb" alt="gary cohn trump china trade war" title="gary cohn trump china trade war" width="135" height="90" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1516593/australia-108-skyscraper.jpg?w=397&h=265&f=13a9318ee7bcbc30817fc68769fdad26" style="position: absolute;"></div>
+                            <div class="col-7">
+                                <div class="row"><h7><a href="#">Trump's Former Chief Economic Adviser Says China Trade War Has Backfired</a></h7></div>
+                                
+                            </div>
+                        </div>
+                        <div class="row news">
+                            <div class="col"><img data-src="https://d.newsweek.com/en/full/1516563/gary-cohn-trump-china-trade-war.jpg?w=135&amp;h=90&amp;l=0&amp;t=0&amp;f=62155f25438cb0cf644989a6b852f3cb" alt="gary cohn trump china trade war" title="gary cohn trump china trade war" width="135" height="90" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1516563/gary-cohn-trump-china-trade-war.jpg?w=135&amp;h=90&amp;l=0&amp;t=0&amp;f=62155f25438cb0cf644989a6b852f3cb" style="position: absolute;"></div>
+                            <div class="col-7">
+                                <div class="row"><h7><a href="#">Trump's Former Chief Economic Adviser Says China Trade War Has Backfired</a></h7></div>
+                                
+                            </div>
+                        </div>
                     </div>
-                    <div class="col" id="sign-up"><h3>SIGN UP FOR OUR NEWSLETTER</h3></div>
+                    <div class="col" id="sign-up-container">
+                        <div class="col" id="sign-up">
+                            <div class="row">
+                                <div class="col-15"><span id="icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 29 28" version="1.1" viewBox="0 0 29 28" xml:space="preserve"><image width="2" height="2" display="none" overflow="visible" xlink:href="../N.png">
+                                </image><polygon class="st0" points="8 22 12 22 12 15 17 22 21 22 21 6 17 6 17 13 12 6 8 6"/></svg></span></div>
+                                <div class="col-8 flex-shrink-1"><p>SIGN UP FOR OUR NEWSLETTER</p></div>
+                            </div>
+                            <div class="row">
+                                <a class="a2" href="#">SIGN UP
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8 14" style="enable-background:new 0 0 8 14;" xml:space="preserve"><g id="arrow-right">
+                                        <defs>
+                                        <rect id="SVGID_1_" width="8" height="14"></rect>
+                                        </defs>
+                                        <clipPath id="SVGID_2_">
+                                        <use xlink:href="#SVGID_1_" style="overflow:visible;"></use>
+                                        </clipPath>
+                                        <g id="Shape_1" class="st0">
+                                        <g>
+                                        <polygon class="st1" points="8,7 1.1,0 0,1.1 5.9,7 0,12.9 1.1,14 8,7 8,7	"></polygon>
+                                        </g>
+                                        </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="row">
+                                <a href="#">Update your preferences »</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </main>  
+        </main>
+        <!--main ending---> 
+        <div class="w-100"></div>
+        <!--sections begining--->
+        <section>
+            <div class="row">
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div>
+            </div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </section>
+        <!--sections ending--->
+        <div class="w-100"></div>
+        <!--footer begining--->
+        <footer></footer>
+        <!--footer ending---> 
     </div>
 
 
