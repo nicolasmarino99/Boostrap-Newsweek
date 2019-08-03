@@ -18,19 +18,25 @@ body{
             text-decoration: none;
            }
         .category {
-            display: block;
-            a {
-                color: #f72210;
-                font-weight: bold;
-            }
             
-            text-transform: uppercase;
-            padding: 8px 15px 9px;
+            position: relative;
+            height: 2em;
+            width: 7em;
+            
+            
+            
+            
             background-color: rgba(255,255,255,.9);
-            position: absolute;
+            
             top: 0;
             left: 0;
             z-index: 1;
+            a {
+                color: #f72210;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-align: center;
+            }
             
         }
         /*beging navbar*/
@@ -81,14 +87,17 @@ body{
 
         .header-bottom {
             position: absolute;
-            top: 5.8em;
-            left: 79.5em;
+            left: 79.26em;
             height: 16px;
-            width: 89px;
+            width: 76px;
             background-color: #f72210;
             border-left: 21px solid white;
             border-top: 16px solid #f72210;
-            z-index: 1100;
+            @media screen and (max-width: 1032px)
+            {
+             display: none;
+                    }   
+            
             
         }
 
@@ -96,7 +105,7 @@ body{
         #bar-with-anchors {
             background-color: white;
             display: flex;
-            font-size: 21px;
+            font-size: 18px;
             font-weight: 700;
             align-items: center;
             justify-content: center;
@@ -110,7 +119,10 @@ body{
             } 
             
             input {
-                width: 80px;
+                width: 49px;
+                position: relative;
+                top: 5px;
+                left: 5px;
             }
             
             a {
@@ -150,20 +162,23 @@ body{
             
 
             /*selecting main containers*/
+            .stickyContainer {   
+                border: 2px solid black;
+                #featuredStories {
+                    border: 2px solid #f72210;
+                    right: 2em;
+                    height: 1900px;
 
-            #FeaturedStories {
-                border: 2px solid #f72210;
-                right: 2em;
-                
-                    .category {
-                        top: 200px;
-                    }
-            }
-
+                        .category {
+                           top: 13.99em;
+                           width: 7em;
+                        }
+                }
+            } 
             #topStory {
                 
                 .category {
-                    top: 17.7em;
+                    top: 18.99em;
                     
                 }
                 #culture-travel {
@@ -186,88 +201,93 @@ body{
                 }    
             }
 
-            #opinion {
-                margin-left: 26px; 
-                left: 26px;
-                
-                #opinions {
+            .stickyContainer {
+                border: 2px solid black;
+                #opinion {
+                    margin-left: 26px; 
+                    left: 26px;
+                    height: 1900px;
+                    border: 2px solid #f72210;
 
-                    .opinion {
-                        border-bottom: 2px solid $gray-color;
-                        .row {
-                            font-weight: bolder;
-                            color: black;
-                            .author {
-                                font-size: 14px;
-                                color: rgb(109, 109, 109);
+                    #opinions {
+
+                        .opinion {
+                            border-bottom: 2px solid $gray-color;
+                            .row {
+                                font-weight: bolder;
+                                color: black;
+                                .author {
+                                    font-size: 14px;
+                                    color: rgb(109, 109, 109);
+                                }
                             }
                         }
+
+                        #latestNews {
+                            margin-top: 1.5em;
+                            .news {
+                                border-bottom: 2px solid $gray-color; 
+                            }    
+                        }
                     }
-                    
-                    #latestNews {
-                        margin-top: 1.5em;
-                        .news {
-                            border-bottom: 2px solid $gray-color; 
+
+                    #sign-up-container {
+                        background-color: #f4f5f6;
+                        border: 1px solid #e5e5e5;
+
+                        #sign-up {
+                            margin: 2em;
+                            span {
+                                background: $base-color;
+                                width: 2em;
+                                height: 10px;
+                                padding: 4px 0em 7px 0px;
+                                border: 0;
+                               svg {
+                                    fill: white;
+                                    width: 2em;
+                                    height: 2em;
+                                    border: 0;
+                               }
+                            }
+                            .col-8{
+
+
+                                    p {
+                                        font-size: 18px;
+                                        margin-left: 10px;
+                                        font-weight: bold; 
+                                    }
+                                
+                            }
+                            .a2 {
+                                background-color: #666666;
+                                color: white; 
+                                padding: .5em 1em;
+                                svg {
+
+                                    width: 8px;
+                                    height: 14px;
+                                    margin-left: 5px;
+                                   g {
+                                    fill: white;
+                                   }
+
+                                }
+                            }
+
+
+                            g {
+                                fill: white;
+                            }
                         }    
                     }
+
+
+
+
                 }
-
-                #sign-up-container {
-                    background-color: #f4f5f6;
-                    border: 1px solid #e5e5e5;
-
-                    #sign-up {
-                        margin: 2em;
-                        span {
-                            background: $base-color;
-                            width: 2em;
-                            height: 10px;
-                            padding: 4px 0em 7px 0px;
-                            border: 0;
-                           svg {
-                                fill: white;
-                                width: 2em;
-                                height: 2em;
-                                border: 0;
-                           }
-                        }
-                        .col-8{
-                            
-                            
-                                p {
-                                    font-size: 18px;
-                                    margin-left: 10px;
-                                    font-weight: bold; 
-                                }
-                           
-                        }
-                        .a2 {
-                            background-color: #666666;
-                            color: white; 
-                            padding: .5em 1em;
-                            svg {
-
-                                width: 8px;
-                                height: 14px;
-                                margin-left: 5px;
-                               g {
-                                fill: white;
-                               }
-
-                            }
-                        }
-
-
-                        g {
-                            fill: white;
-                        }
-                    }    
-                }
-
-
-                
-
-            }
+            }    
 
             /*selecting main containers end*/
 

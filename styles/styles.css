@@ -22,11 +22,10 @@ body #container a:hover {
   text-decoration: none;
 }
 body #container .category {
-  display: block;
-  text-transform: uppercase;
-  padding: 8px 15px 9px;
+  position: relative;
+  height: 2em;
+  width: 7em;
   background-color: rgba(255, 255, 255, 0.9);
-  position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
@@ -34,6 +33,8 @@ body #container .category {
 body #container .category a {
   color: #f72210;
   font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
 }
 body #container nav {
   position: relative;
@@ -72,21 +73,24 @@ body #container nav g {
 }
 body #container .header-bottom {
   position: absolute;
-  top: 5.8em;
-  left: 79.5em;
+  left: 79.26em;
   height: 16px;
-  width: 89px;
+  width: 76px;
   background-color: #f72210;
   border-left: 21px solid white;
   border-top: 16px solid #f72210;
-  z-index: 1100;
+}
+@media screen and (max-width: 1032px) {
+  body #container .header-bottom {
+    display: none;
+  }
 }
 body #container #bar-with-anchors {
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 700;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -102,7 +106,10 @@ body #container #bar-with-anchors .col-sm {
   margin-bottom: 0.5em;
 }
 body #container #bar-with-anchors input {
-  width: 80px;
+  width: 49px;
+  position: relative;
+  top: 5px;
+  left: 5px;
 }
 body #container #bar-with-anchors a {
   font-family: "Roboto Condensed",sans-serif;
@@ -140,15 +147,20 @@ body #container #aside-main-aside .row {
   margin-right: 0px;
   margin-left: 0px;
 }
-body #container #aside-main-aside #FeaturedStories {
+body #container #aside-main-aside .stickyContainer {
+  border: 2px solid black;
+}
+body #container #aside-main-aside .stickyContainer #featuredStories {
   border: 2px solid #f72210;
   right: 2em;
+  height: 1900px;
 }
-body #container #aside-main-aside #FeaturedStories .category {
-  top: 200px;
+body #container #aside-main-aside .stickyContainer #featuredStories .category {
+  top: 13.99em;
+  width: 7em;
 }
 body #container #aside-main-aside #topStory .category {
-  top: 17.7em;
+  top: 18.99em;
 }
 body #container #aside-main-aside #topStory #culture-travel {
   background: #e0e0e0;
@@ -167,65 +179,70 @@ body #container #aside-main-aside #topStory #moreStories {
 body #container #aside-main-aside #topStory #moreStories .section {
   border-bottom: 2px solid #e0e0e0;
 }
-body #container #aside-main-aside #opinion {
+body #container #aside-main-aside .stickyContainer {
+  border: 2px solid black;
+}
+body #container #aside-main-aside .stickyContainer #opinion {
   margin-left: 26px;
   left: 26px;
+  height: 1900px;
+  border: 2px solid #f72210;
 }
-body #container #aside-main-aside #opinion #opinions .opinion {
+body #container #aside-main-aside .stickyContainer #opinion #opinions .opinion {
   border-bottom: 2px solid #e0e0e0;
 }
-body #container #aside-main-aside #opinion #opinions .opinion .row {
+body #container #aside-main-aside .stickyContainer #opinion #opinions .opinion .row {
   font-weight: bolder;
   color: black;
 }
-body #container #aside-main-aside #opinion #opinions .opinion .row .author {
+body #container #aside-main-aside .stickyContainer #opinion #opinions .opinion .row .author {
   font-size: 14px;
   color: #6d6d6d;
 }
-body #container #aside-main-aside #opinion #opinions #latestNews {
+body #container #aside-main-aside .stickyContainer #opinion #opinions #latestNews {
   margin-top: 1.5em;
 }
-body #container #aside-main-aside #opinion #opinions #latestNews .news {
+body #container #aside-main-aside .stickyContainer #opinion #opinions #latestNews .news {
   border-bottom: 2px solid #e0e0e0;
 }
-body #container #aside-main-aside #opinion #sign-up-container {
+body #container #aside-main-aside .stickyContainer #opinion #sign-up-container {
   background-color: #f4f5f6;
   border: 1px solid #e5e5e5;
 }
-body #container #aside-main-aside #opinion #sign-up-container #sign-up {
+body #container #aside-main-aside .stickyContainer #opinion #sign-up-container #sign-up {
   margin: 2em;
 }
-body #container #aside-main-aside #opinion #sign-up-container #sign-up span {
+body #container #aside-main-aside .stickyContainer #opinion #sign-up-container #sign-up span {
   background: #f72210;
   width: 2em;
   height: 10px;
   padding: 4px 0em 7px 0px;
   border: 0;
 }
-body #container #aside-main-aside #opinion #sign-up-container #sign-up span svg {
+body #container #aside-main-aside .stickyContainer #opinion #sign-up-container #sign-up span svg {
   fill: white;
   width: 2em;
   height: 2em;
   border: 0;
 }
-body #container #aside-main-aside #opinion #sign-up-container #sign-up .col-8 p {
+body #container #aside-main-aside .stickyContainer #opinion #sign-up-container #sign-up .col-8 p {
   font-size: 18px;
   margin-left: 10px;
   font-weight: bold;
 }
-body #container #aside-main-aside #opinion #sign-up-container #sign-up .a2 {
+body #container #aside-main-aside .stickyContainer #opinion #sign-up-container #sign-up .a2 {
   background-color: #666666;
   color: white;
   padding: .5em 1em;
 }
-body #container #aside-main-aside #opinion #sign-up-container #sign-up .a2 svg {
+body #container #aside-main-aside .stickyContainer #opinion #sign-up-container #sign-up .a2 svg {
   width: 8px;
   height: 14px;
   margin-left: 5px;
 }
-body #container #aside-main-aside #opinion #sign-up-container #sign-up .a2 svg g {
+body #container #aside-main-aside .stickyContainer #opinion #sign-up-container #sign-up .a2 svg g {
   fill: white;
 }
-body #container #aside-main-aside #opinion #sign-up-container #sign-up g {
+body #container #aside-main-aside .stickyContainer #opinion #sign-up-container #sign-up g {
   fill: white;
 }
