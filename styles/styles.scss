@@ -3,6 +3,21 @@ $gray-color: rgb(224, 224, 224);
 %guide {
     border: 2px solid rgba(255, 255, 255, 0);
 }
+%iconStyles {
+    span {
+        background: $base-color;
+        width: 2em;
+        height: 10px;
+        padding: 4px 0em 7px 0px;
+        border: 0;
+       svg {
+            fill: white;
+            width: 2em;
+            height: 2em;
+            border: 0;
+       }
+    }
+}
 
 body{
     background-color: $gray-color;
@@ -41,10 +56,14 @@ body{
         }
         /*beging navbar*/
         nav {
-            position: relative;
+            
+            position: fixed;
+            margin-bottom: 13em;
+            width: 97%;
             background-color: $base-color;
             color: white;
             padding: 1em;
+            z-index: 2;
             
            
             .align-text-bottom {
@@ -87,6 +106,8 @@ body{
 
         .header-bottom {
             position: absolute;
+            
+            
             left: 79.26em;
             height: 16px;
             width: 76px;
@@ -103,6 +124,7 @@ body{
 
 
         #bar-with-anchors {
+            padding-top: 93px;
             background-color: white;
             display: flex;
             font-size: 18px;
@@ -162,11 +184,14 @@ body{
             
 
             /*selecting main containers*/
-            .stickyContainer {   
-                border: 2px solid black;
+            #stickyContainer1 {   
+               
+                right: 2em;
                 #featuredStories {
-                    border: 2px solid #f72210;
-                    right: 2em;
+                    
+                    position: -webkit-sticky;
+	                position: sticky;
+	                top: 0;
                     height: 1900px;
 
                         .category {
@@ -201,13 +226,17 @@ body{
                 }    
             }
 
-            .stickyContainer {
-                border: 2px solid black;
+            #stickyContainer2 {
+                
+                left: 26px;
+                
                 #opinion {
-                    margin-left: 26px; 
-                    left: 26px;
+                    position: -webkit-sticky;
+	                position: sticky;
+	                top: 0;
+                    
                     height: 1900px;
-                    border: 2px solid #f72210;
+                    
 
                     #opinions {
 
@@ -237,19 +266,7 @@ body{
 
                         #sign-up {
                             margin: 2em;
-                            span {
-                                background: $base-color;
-                                width: 2em;
-                                height: 10px;
-                                padding: 4px 0em 7px 0px;
-                                border: 0;
-                               svg {
-                                    fill: white;
-                                    width: 2em;
-                                    height: 2em;
-                                    border: 0;
-                               }
-                            }
+                            @extend %iconStyles;
                             .col-8{
 
 
@@ -290,7 +307,47 @@ body{
             }    
 
             /*selecting main containers end*/
+            /*sections begin*/
 
+            section {  
+                border: 2px solid black;
+                width: 100px;
+                
+                #inTheMagazine {
+                    h2 { 
+                        @extend %iconStyles;
+                    }
+                    border: 2px solid black;
+                }
+                #editorsPick {
+                    border: 2px solid black;
+                }
+                #featuredSlide {
+                    border: 2px solid black;
+                }
+                #U.S {
+
+                }
+                #world {
+
+                }
+                #business {
+
+                }
+                #techscience {
+
+                }
+                #culture {
+
+                }
+                sports {
+
+                }
+
+            }
+
+
+            /*sections end*/
 
             
         }

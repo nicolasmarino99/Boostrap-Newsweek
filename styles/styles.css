@@ -2,6 +2,20 @@ body #container #aside-main-aside div {
   border: 2px solid rgba(255, 255, 255, 0);
 }
 
+body #container #aside-main-aside #stickyContainer2 #opinion #sign-up-container #sign-up span, body #container #aside-main-aside section #inTheMagazine h2 span {
+  background: #f72210;
+  width: 2em;
+  height: 10px;
+  padding: 4px 0em 7px 0px;
+  border: 0;
+}
+body #container #aside-main-aside #stickyContainer2 #opinion #sign-up-container #sign-up span svg, body #container #aside-main-aside section #inTheMagazine h2 span svg {
+  fill: white;
+  width: 2em;
+  height: 2em;
+  border: 0;
+}
+
 body {
   background-color: #e0e0e0;
   font-family: "Roboto Condensed", sans-serif;
@@ -37,10 +51,13 @@ body #container .category a {
   text-align: center;
 }
 body #container nav {
-  position: relative;
+  position: fixed;
+  margin-bottom: 13em;
+  width: 97%;
   background-color: #f72210;
   color: white;
   padding: 1em;
+  z-index: 2;
 }
 body #container nav .align-text-bottom {
   margin-top: auto;
@@ -86,6 +103,7 @@ body #container .header-bottom {
   }
 }
 body #container #bar-with-anchors {
+  padding-top: 93px;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,6 +149,8 @@ body #container #aside-main-aside {
   padding: 1em 3em;
   /*selecting main containers*/
   /*selecting main containers end*/
+  /*sections begin*/
+  /*sections end*/
 }
 body #container #aside-main-aside div {
   padding: 0;
@@ -147,15 +167,16 @@ body #container #aside-main-aside .row {
   margin-right: 0px;
   margin-left: 0px;
 }
-body #container #aside-main-aside .stickyContainer {
-  border: 2px solid black;
-}
-body #container #aside-main-aside .stickyContainer #featuredStories {
-  border: 2px solid #f72210;
+body #container #aside-main-aside #stickyContainer1 {
   right: 2em;
+}
+body #container #aside-main-aside #stickyContainer1 #featuredStories {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   height: 1900px;
 }
-body #container #aside-main-aside .stickyContainer #featuredStories .category {
+body #container #aside-main-aside #stickyContainer1 #featuredStories .category {
   top: 13.99em;
   width: 7em;
 }
@@ -179,70 +200,70 @@ body #container #aside-main-aside #topStory #moreStories {
 body #container #aside-main-aside #topStory #moreStories .section {
   border-bottom: 2px solid #e0e0e0;
 }
-body #container #aside-main-aside .stickyContainer {
-  border: 2px solid black;
-}
-body #container #aside-main-aside .stickyContainer #opinion {
-  margin-left: 26px;
+body #container #aside-main-aside #stickyContainer2 {
   left: 26px;
-  height: 1900px;
-  border: 2px solid #f72210;
 }
-body #container #aside-main-aside .stickyContainer #opinion #opinions .opinion {
+body #container #aside-main-aside #stickyContainer2 #opinion {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 1900px;
+}
+body #container #aside-main-aside #stickyContainer2 #opinion #opinions .opinion {
   border-bottom: 2px solid #e0e0e0;
 }
-body #container #aside-main-aside .stickyContainer #opinion #opinions .opinion .row {
+body #container #aside-main-aside #stickyContainer2 #opinion #opinions .opinion .row {
   font-weight: bolder;
   color: black;
 }
-body #container #aside-main-aside .stickyContainer #opinion #opinions .opinion .row .author {
+body #container #aside-main-aside #stickyContainer2 #opinion #opinions .opinion .row .author {
   font-size: 14px;
   color: #6d6d6d;
 }
-body #container #aside-main-aside .stickyContainer #opinion #opinions #latestNews {
+body #container #aside-main-aside #stickyContainer2 #opinion #opinions #latestNews {
   margin-top: 1.5em;
 }
-body #container #aside-main-aside .stickyContainer #opinion #opinions #latestNews .news {
+body #container #aside-main-aside #stickyContainer2 #opinion #opinions #latestNews .news {
   border-bottom: 2px solid #e0e0e0;
 }
-body #container #aside-main-aside .stickyContainer #opinion #sign-up-container {
+body #container #aside-main-aside #stickyContainer2 #opinion #sign-up-container {
   background-color: #f4f5f6;
   border: 1px solid #e5e5e5;
 }
-body #container #aside-main-aside .stickyContainer #opinion #sign-up-container #sign-up {
+body #container #aside-main-aside #stickyContainer2 #opinion #sign-up-container #sign-up {
   margin: 2em;
 }
-body #container #aside-main-aside .stickyContainer #opinion #sign-up-container #sign-up span {
-  background: #f72210;
-  width: 2em;
-  height: 10px;
-  padding: 4px 0em 7px 0px;
-  border: 0;
-}
-body #container #aside-main-aside .stickyContainer #opinion #sign-up-container #sign-up span svg {
-  fill: white;
-  width: 2em;
-  height: 2em;
-  border: 0;
-}
-body #container #aside-main-aside .stickyContainer #opinion #sign-up-container #sign-up .col-8 p {
+body #container #aside-main-aside #stickyContainer2 #opinion #sign-up-container #sign-up .col-8 p {
   font-size: 18px;
   margin-left: 10px;
   font-weight: bold;
 }
-body #container #aside-main-aside .stickyContainer #opinion #sign-up-container #sign-up .a2 {
+body #container #aside-main-aside #stickyContainer2 #opinion #sign-up-container #sign-up .a2 {
   background-color: #666666;
   color: white;
   padding: .5em 1em;
 }
-body #container #aside-main-aside .stickyContainer #opinion #sign-up-container #sign-up .a2 svg {
+body #container #aside-main-aside #stickyContainer2 #opinion #sign-up-container #sign-up .a2 svg {
   width: 8px;
   height: 14px;
   margin-left: 5px;
 }
-body #container #aside-main-aside .stickyContainer #opinion #sign-up-container #sign-up .a2 svg g {
+body #container #aside-main-aside #stickyContainer2 #opinion #sign-up-container #sign-up .a2 svg g {
   fill: white;
 }
-body #container #aside-main-aside .stickyContainer #opinion #sign-up-container #sign-up g {
+body #container #aside-main-aside #stickyContainer2 #opinion #sign-up-container #sign-up g {
   fill: white;
+}
+body #container #aside-main-aside section {
+  border: 2px solid black;
+  width: 100px;
+}
+body #container #aside-main-aside section #inTheMagazine {
+  border: 2px solid black;
+}
+body #container #aside-main-aside section #editorsPick {
+  border: 2px solid black;
+}
+body #container #aside-main-aside section #featuredSlide {
+  border: 2px solid black;
 }
