@@ -2,18 +2,37 @@ body #container #aside-main-aside div {
   border: 2px solid rgba(255, 255, 255, 0);
 }
 
-body #container #aside-main-aside #stickyContainer2 #opinion #sign-up-container #sign-up span, body #container #aside-main-aside section #inTheMagazine h2 span {
+body #container #aside-main-aside #stickyContainer2 #opinion #sign-up-container #sign-up span, body #container #features span, body #container #editors-pick span {
   background: #f72210;
   width: 2em;
   height: 10px;
   padding: 4px 0em 7px 0px;
   border: 0;
 }
-body #container #aside-main-aside #stickyContainer2 #opinion #sign-up-container #sign-up span svg, body #container #aside-main-aside section #inTheMagazine h2 span svg {
+body #container #aside-main-aside #stickyContainer2 #opinion #sign-up-container #sign-up span svg, body #container #features span svg, body #container #editors-pick span svg {
   fill: white;
   width: 2em;
   height: 2em;
   border: 0;
+}
+
+body #container #features h6, body #container #editors-pick h6 {
+  position: relative;
+  width: 70%;
+  left: 22em;
+  padding-bottom: 8px;
+  font-weight: bold;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+body #container #features .feature .a1, body #container #editors-pick .a1 {
+  color: white;
+  background-color: #f72210;
+  padding: 3px 0px;
+  margin-left: 1em;
+  text-align: center;
+  font-weight: bold;
 }
 
 body {
@@ -21,11 +40,15 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 body #container {
-  margin: 0 2.19em;
+  margin: 0 1.32em;
+  width: auto;
+  background-color: white;
   /*beging navbar*/
   /*navbar ending*/
   /*main aside begining*/
   /*main aside ending*/
+  /*sections begin*/
+  /*sections begin*/
 }
 body #container a {
   color: black;
@@ -149,8 +172,6 @@ body #container #aside-main-aside {
   padding: 1em 3em;
   /*selecting main containers*/
   /*selecting main containers end*/
-  /*sections begin*/
-  /*sections end*/
 }
 body #container #aside-main-aside div {
   padding: 0;
@@ -173,7 +194,7 @@ body #container #aside-main-aside #stickyContainer1 {
 body #container #aside-main-aside #stickyContainer1 #featuredStories {
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: -80em;
   height: 1900px;
 }
 body #container #aside-main-aside #stickyContainer1 #featuredStories .category {
@@ -206,8 +227,11 @@ body #container #aside-main-aside #stickyContainer2 {
 body #container #aside-main-aside #stickyContainer2 #opinion {
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: -80em;
   height: 1900px;
+}
+body #container #aside-main-aside #stickyContainer2 #opinion #opinions {
+  margin-top: 2em;
 }
 body #container #aside-main-aside #stickyContainer2 #opinion #opinions .opinion {
   border-bottom: 2px solid #e0e0e0;
@@ -227,6 +251,7 @@ body #container #aside-main-aside #stickyContainer2 #opinion #opinions #latestNe
   border-bottom: 2px solid #e0e0e0;
 }
 body #container #aside-main-aside #stickyContainer2 #opinion #sign-up-container {
+  margin-top: 7em;
   background-color: #f4f5f6;
   border: 1px solid #e5e5e5;
 }
@@ -254,16 +279,18 @@ body #container #aside-main-aside #stickyContainer2 #opinion #sign-up-container 
 body #container #aside-main-aside #stickyContainer2 #opinion #sign-up-container #sign-up g {
   fill: white;
 }
-body #container #aside-main-aside section {
-  border: 2px solid black;
-  width: 100px;
+body #container h3 {
+  font-size: 20px;
+  font-weight: bold;
 }
-body #container #aside-main-aside section #inTheMagazine {
-  border: 2px solid black;
+body #container #features .feature .row {
+  margin-top: 1em;
+  color: #f72210;
+  text-transform: uppercase;
 }
-body #container #aside-main-aside section #editorsPick {
-  border: 2px solid black;
+body #container #editors-pick .row {
+  margin-top: 1em;
 }
-body #container #aside-main-aside section #featuredSlide {
-  border: 2px solid black;
+body #container footer {
+  background: white;
 }

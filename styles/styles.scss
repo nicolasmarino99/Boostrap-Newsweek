@@ -17,13 +17,33 @@ $gray-color: rgb(224, 224, 224);
             border: 0;
        }
     }
+    
+}
+%titlePosition {
+    position: relative;
+    width: 70%;
+    left: 22em;
+    padding-bottom: 8px;
+    font-weight: bold;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #dbdbdb
+}
+%redButtons {
+   color: white;
+    background-color: $base-color;
+    padding: 3px 0px;
+    margin-left: 1em;
+    text-align: center;
+    font-weight: bold;
 }
 
 body{
     background-color: $gray-color;
     font-family: "Roboto Condensed", sans-serif;
     #container {
-        margin: 0 2.19em;
+        margin: 0 1.32em;
+        width: auto;
+        background-color: white;
         a {
             color: black;
             font-weight: bolder;
@@ -191,8 +211,9 @@ body{
                     
                     position: -webkit-sticky;
 	                position: sticky;
-	                top: 0;
+	                top: -80em;
                     height: 1900px;
+                    
 
                         .category {
                            top: 13.99em;
@@ -233,13 +254,13 @@ body{
                 #opinion {
                     position: -webkit-sticky;
 	                position: sticky;
-	                top: 0;
+	                top: -80em;
                     
                     height: 1900px;
                     
 
                     #opinions {
-
+                        margin-top: 2em;
                         .opinion {
                             border-bottom: 2px solid $gray-color;
                             .row {
@@ -261,6 +282,7 @@ body{
                     }
 
                     #sign-up-container {
+                        margin-top: 7em;
                         background-color: #f4f5f6;
                         border: 1px solid #e5e5e5;
 
@@ -307,52 +329,62 @@ body{
             }    
 
             /*selecting main containers end*/
-            /*sections begin*/
+            
 
-            section {  
-                border: 2px solid black;
-                width: 100px;
+            
                 
-                #inTheMagazine {
-                    h2 { 
-                        @extend %iconStyles;
-                    }
-                    border: 2px solid black;
+                
+                                   
+        }
+        /*main aside ending*/
+        /*sections begin*/
+        h3 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #features {  
+            
+            @extend %iconStyles;
+            h6 {
+                @extend %titlePosition
+            }
+            
+            .feature {
+                
+                
+                .row {
+                    margin-top: 1em;
+                    color: $base-color;
+                    text-transform: uppercase;
                 }
-                #editorsPick {
-                    border: 2px solid black;
+                .a1 {
+                    @extend %redButtons;
                 }
-                #featuredSlide {
-                    border: 2px solid black;
-                }
-                #U.S {
+            }
+        }
+        #editors-pick {
 
-                }
-                #world {
-
-                }
-                #business {
-
-                }
-                #techscience {
-
-                }
-                #culture {
-
-                }
-                sports {
-
-                }
-
+            @extend %iconStyles;
+            h6 {
+                @extend %titlePosition
             }
 
-
-            /*sections end*/
-
+            .row {
+                margin-top: 1em;
+                
+                
+            }
+            .a1 {
+                @extend %redButtons;
+            }
+        }
+        footer {
+            background: white;
             
         }
 
-
-        /*main aside ending*/
+        /*sections begin*/
+        
+        
     }
 }
