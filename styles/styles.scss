@@ -20,7 +20,7 @@ $gray-color: rgb(224, 224, 224);
     
 }
 %titlePosition {
-    position: relative;
+    
     width: 70%;
     left: 22em;
     padding-bottom: 8px;
@@ -53,8 +53,8 @@ body{
             text-decoration: none;
            }
         .category {
+            border: 1px solid black;
             
-            position: relative;
             height: 2em;
             width: 7em;
             
@@ -125,9 +125,9 @@ body{
 
 
         .header-bottom {
-            position: absolute;
+            position: fixed;
             
-            
+            top: 100em;
             left: 79.26em;
             height: 16px;
             width: 76px;
@@ -214,6 +214,7 @@ body{
 	                top: -80em;
                     height: 1900px;
                     
+                    
 
                         .category {
                            top: 13.99em;
@@ -257,6 +258,11 @@ body{
 	                top: -80em;
                     
                     height: 1900px;
+                    @media screen and (max-width: 1032px) {
+                        font-size:15px;
+                        height: 1500px;
+                        
+                         } 
                     
 
                     #opinions {
@@ -285,13 +291,16 @@ body{
                         margin-top: 7em;
                         background-color: #f4f5f6;
                         border: 1px solid #e5e5e5;
-
-                        #sign-up {
+                        @media screen and (max-width: 1032px) {
                             margin: 2em;
+                            margin-left: -4em;
+                             } 
+                        #sign-up {
+                            
                             @extend %iconStyles;
                             .col-8{
 
-
+                            
                                     p {
                                         font-size: 18px;
                                         margin-left: 10px;
@@ -378,12 +387,49 @@ body{
                 @extend %redButtons;
             }
         }
+
         footer {
             background: white;
+            border-bottom: 1px solid rgb(214, 214, 214);
+            color: #666666;
+            width: 95%;
+            margin: auto;
+            margin-top: 6em;
+            font-weight: none;
             
+            .nw-logo {
+                width: 25%;
+                g {
+                    fill: #f72210;
+                    
+                }
+                
+            }
+            p {
+                margin: 0;
+                font-size: 12px;
+                color: #a7a7a7;
+                vertical-align: bottom;
+            }
+            .social {
+                font-size: 1.9em;
+                margin-left: .5em;
+                
+            }
         }
 
         /*sections begin*/
+        
+            .red-btn {
+               
+                color: white;
+                background-color: $base-color;
+                padding: 5px 0px;
+                margin-left: 1em;
+                text-align: center;
+                font-weight: bold;
+            
+            }
         
         
     }

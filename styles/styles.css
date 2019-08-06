@@ -17,7 +17,6 @@ body #container #aside-main-aside #stickyContainer2 #opinion #sign-up-container 
 }
 
 body #container #features h6, body #container #editors-pick h6 {
-  position: relative;
   width: 70%;
   left: 22em;
   padding-bottom: 8px;
@@ -59,7 +58,7 @@ body #container a:hover {
   text-decoration: none;
 }
 body #container .category {
-  position: relative;
+  border: 1px solid black;
   height: 2em;
   width: 7em;
   background-color: rgba(255, 255, 255, 0.9);
@@ -112,7 +111,8 @@ body #container nav g {
   fill: white;
 }
 body #container .header-bottom {
-  position: absolute;
+  position: fixed;
+  top: 100em;
   left: 79.26em;
   height: 16px;
   width: 76px;
@@ -230,6 +230,12 @@ body #container #aside-main-aside #stickyContainer2 #opinion {
   top: -80em;
   height: 1900px;
 }
+@media screen and (max-width: 1032px) {
+  body #container #aside-main-aside #stickyContainer2 #opinion {
+    font-size: 15px;
+    height: 1500px;
+  }
+}
 body #container #aside-main-aside #stickyContainer2 #opinion #opinions {
   margin-top: 2em;
 }
@@ -255,8 +261,11 @@ body #container #aside-main-aside #stickyContainer2 #opinion #sign-up-container 
   background-color: #f4f5f6;
   border: 1px solid #e5e5e5;
 }
-body #container #aside-main-aside #stickyContainer2 #opinion #sign-up-container #sign-up {
-  margin: 2em;
+@media screen and (max-width: 1032px) {
+  body #container #aside-main-aside #stickyContainer2 #opinion #sign-up-container {
+    margin: 2em;
+    margin-left: -4em;
+  }
 }
 body #container #aside-main-aside #stickyContainer2 #opinion #sign-up-container #sign-up .col-8 p {
   font-size: 18px;
@@ -293,4 +302,34 @@ body #container #editors-pick .row {
 }
 body #container footer {
   background: white;
+  border-bottom: 1px solid #d6d6d6;
+  color: #666666;
+  width: 95%;
+  margin: auto;
+  margin-top: 6em;
+  font-weight: none;
+}
+body #container footer .nw-logo {
+  width: 25%;
+}
+body #container footer .nw-logo g {
+  fill: #f72210;
+}
+body #container footer p {
+  margin: 0;
+  font-size: 12px;
+  color: #a7a7a7;
+  vertical-align: bottom;
+}
+body #container footer .social {
+  font-size: 1.9em;
+  margin-left: .5em;
+}
+body #container .red-btn {
+  color: white;
+  background-color: #f72210;
+  padding: 5px 0px;
+  margin-left: 1em;
+  text-align: center;
+  font-weight: bold;
 }
