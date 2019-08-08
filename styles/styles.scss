@@ -1,0 +1,434 @@
+$base-color: #f72210;
+$gray-color: rgb(224, 224, 224);
+%guide {
+    border: 2px solid rgba(255, 255, 255, 0);
+}
+%iconStyles {
+    span {
+        background: $base-color;
+        width: 2em;
+        height: 10px;
+        padding: 4px 0em 7px 0px;
+        border: 0;
+       svg {
+            fill: white;
+            width: 2em;
+            height: 2em;
+            border: 0;
+       }
+    }
+    
+}
+%titlePosition {
+    
+    width: 70%;
+    left: 22em;
+    padding-bottom: 8px;
+    font-weight: bold;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #dbdbdb
+}
+%redButtons {
+   color: white;
+    background-color: $base-color;
+    padding: 3px 0px;
+    margin-left: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+body{
+    background-color: $gray-color;
+    font-family: "Roboto Condensed", sans-serif;
+    #container {
+        margin: 0 1.32em;
+        width: auto;
+        background-color: white;
+        a {
+            color: black;
+            font-weight: bolder;
+        }
+        a:hover {
+            color: #f72210;
+            text-decoration: none;
+           }
+        .category {
+            border: 1px solid black;
+            
+            height: 2em;
+            width: 7em;
+            
+            
+            
+            
+            background-color: rgba(255,255,255,.9);
+            
+            top: 0;
+            left: 0;
+            z-index: 1;
+            a {
+                color: #f72210;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-align: center;
+            }
+            
+        }
+        /*beging navbar*/
+        nav {
+            
+            position: fixed;
+            margin-bottom: 13em;
+            width: 97%;
+            background-color: $base-color;
+            color: white;
+            padding: 1em;
+            z-index: 2;
+            
+           
+            .align-text-bottom {
+                
+                margin-top: auto;
+                
+            }
+
+            a {
+                color: white;
+                font-size: 18px;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin: 1px;
+                padding: 0em .5em;
+            }
+
+            .a2 {
+                background-color: white;
+                color: $base-color; 
+                svg {
+                    
+                    width: 8px;
+                    height: 14px;
+                    margin-left: 5px;
+                   g {
+                    fill: #f72210;
+                   }
+                }
+            }
+               
+            
+            g {
+                fill: white;
+            }
+        }
+
+
+        .header-bottom {
+            position: fixed;
+            
+            top: 100em;
+            left: 79.26em;
+            height: 16px;
+            width: 76px;
+            background-color: #f72210;
+            border-left: 21px solid white;
+            border-top: 16px solid #f72210;
+            @media screen and (max-width: 1032px)
+            {
+             display: none;
+                    }   
+            
+            
+        }
+
+
+        #bar-with-anchors {
+            padding-top: 93px;
+            background-color: white;
+            display: flex;
+            font-size: 18px;
+            font-weight: 700;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 2px solid $gray-color;
+            
+
+            .col-sm {
+                padding: 0;
+                margin-top:0.5em;
+                margin-bottom:0.5em;
+            } 
+            
+            input {
+                width: 49px;
+                position: relative;
+                top: 5px;
+                left: 5px;
+            }
+            
+            a {
+                font-family: "Roboto Condensed",sans-serif;
+                border-right: 1px solid $gray-color;
+                color:black; 
+                display: flex;
+                align-items: center;
+                justify-content: center;
+               
+            }
+            
+        }
+        /*navbar ending*/
+        /*main aside begining*/
+        #aside-main-aside {
+            background-color: white;
+            margin: 0 -.99em;
+            padding: 1em 3em;
+            div {
+                padding: 0;
+                @extend %guide;
+                h2 {
+                    font-size: 16px;
+                    color: rgb(129, 129, 129);
+                    font-weight: bold;
+                }
+                h4 {
+                    font-weight: bold;
+                }
+                
+            } 
+            .row {
+                margin-right: 0px;
+                margin-left: 0px;
+            }
+            
+
+            /*selecting main containers*/
+            #stickyContainer1 {   
+               
+                right: 2em;
+                #featuredStories {
+                    
+                    position: -webkit-sticky;
+	                position: sticky;
+	                top: -80em;
+                    height: 1900px;
+                    
+                    
+
+                        .category {
+                           top: 13.99em;
+                           width: 7em;
+                        }
+                }
+            } 
+            #topStory {
+                
+                .category {
+                    top: 18.99em;
+                    
+                }
+                #culture-travel {
+                    background: $gray-color;
+                    border-color: $gray-color;
+                    a {
+                        background: #c2d4d7;
+                        font-weight: 100;
+                    }
+                    p {
+                        color: #8d8d8d;
+                    }
+                    
+                }
+                #moreStories{
+                    margin-top: 1em;
+                    .section {
+                        border-bottom: 2px solid $gray-color; 
+                    }
+                }    
+            }
+
+            #stickyContainer2 {
+                
+                left: 26px;
+                
+                #opinion {
+                    position: -webkit-sticky;
+	                position: sticky;
+	                top: -80em;
+                    
+                    height: 1900px;
+                    @media screen and (max-width: 1032px) {
+                        font-size:15px;
+                        height: 1500px;
+                        
+                         } 
+                    
+
+                    #opinions {
+                        margin-top: 2em;
+                        .opinion {
+                            border-bottom: 2px solid $gray-color;
+                            .row {
+                                font-weight: bolder;
+                                color: black;
+                                .author {
+                                    font-size: 14px;
+                                    color: rgb(109, 109, 109);
+                                }
+                            }
+                        }
+
+                        #latestNews {
+                            margin-top: 1.5em;
+                            .news {
+                                border-bottom: 2px solid $gray-color; 
+                            }    
+                        }
+                    }
+
+                    #sign-up-container {
+                        margin-top: 7em;
+                        background-color: #f4f5f6;
+                        border: 1px solid #e5e5e5;
+                        @media screen and (max-width: 1032px) {
+                            margin: 2em;
+                            margin-left: -4em;
+                             } 
+                        #sign-up {
+                            
+                            @extend %iconStyles;
+                            .col-8{
+
+                            
+                                    p {
+                                        font-size: 18px;
+                                        margin-left: 10px;
+                                        font-weight: bold; 
+                                    }
+                                
+                            }
+                            .a2 {
+                                background-color: #666666;
+                                color: white; 
+                                padding: .5em 1em;
+                                svg {
+
+                                    width: 8px;
+                                    height: 14px;
+                                    margin-left: 5px;
+                                   g {
+                                    fill: white;
+                                   }
+
+                                }
+                            }
+
+
+                            g {
+                                fill: white;
+                            }
+                        }    
+                    }
+
+
+
+
+                }
+            }    
+
+            /*selecting main containers end*/
+            
+
+            
+                
+                
+                                   
+        }
+        /*main aside ending*/
+        /*sections begin*/
+        h3 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #features {  
+            
+            @extend %iconStyles;
+            h6 {
+                @extend %titlePosition
+            }
+            
+            .feature {
+                
+                
+                .row {
+                    margin-top: 1em;
+                    color: $base-color;
+                    text-transform: uppercase;
+                }
+                .a1 {
+                    @extend %redButtons;
+                }
+            }
+        }
+        #editors-pick {
+
+            @extend %iconStyles;
+            h6 {
+                @extend %titlePosition
+            }
+
+            .row {
+                margin-top: 1em;
+                
+                
+            }
+            .a1 {
+                @extend %redButtons;
+            }
+        }
+
+        footer {
+            background: white;
+            border-bottom: 1px solid rgb(214, 214, 214);
+            color: #666666;
+            width: 95%;
+            margin: auto;
+            margin-top: 6em;
+            font-weight: none;
+            
+            .nw-logo {
+                width: 25%;
+                g {
+                    fill: #f72210;
+                    
+                }
+                
+            }
+            p {
+                margin: 0;
+                font-size: 12px;
+                color: #a7a7a7;
+                vertical-align: bottom;
+            }
+            .social {
+                font-size: 1.9em;
+                margin-left: .5em;
+                
+            }
+        }
+
+        /*sections begin*/
+        
+            .red-btn {
+               
+                color: white;
+                background-color: $base-color;
+                padding: 5px 0px;
+                margin-left: 1em;
+                text-align: center;
+                font-weight: bold;
+            
+            }
+        
+        
+    }
+}

@@ -1,0 +1,335 @@
+body #container #aside-main-aside div {
+  border: 2px solid rgba(255, 255, 255, 0);
+}
+
+body #container #aside-main-aside #stickyContainer2 #opinion #sign-up-container #sign-up span, body #container #features span, body #container #editors-pick span {
+  background: #f72210;
+  width: 2em;
+  height: 10px;
+  padding: 4px 0em 7px 0px;
+  border: 0;
+}
+body #container #aside-main-aside #stickyContainer2 #opinion #sign-up-container #sign-up span svg, body #container #features span svg, body #container #editors-pick span svg {
+  fill: white;
+  width: 2em;
+  height: 2em;
+  border: 0;
+}
+
+body #container #features h6, body #container #editors-pick h6 {
+  width: 70%;
+  left: 22em;
+  padding-bottom: 8px;
+  font-weight: bold;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+body #container #features .feature .a1, body #container #editors-pick .a1 {
+  color: white;
+  background-color: #f72210;
+  padding: 3px 0px;
+  margin-left: 1em;
+  text-align: center;
+  font-weight: bold;
+}
+
+body {
+  background-color: #e0e0e0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+body #container {
+  margin: 0 1.32em;
+  width: auto;
+  background-color: white;
+  /*beging navbar*/
+  /*navbar ending*/
+  /*main aside begining*/
+  /*main aside ending*/
+  /*sections begin*/
+  /*sections begin*/
+}
+body #container a {
+  color: black;
+  font-weight: bolder;
+}
+body #container a:hover {
+  color: #f72210;
+  text-decoration: none;
+}
+body #container .category {
+  border: 1px solid black;
+  height: 2em;
+  width: 7em;
+  background-color: rgba(255, 255, 255, 0.9);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+body #container .category a {
+  color: #f72210;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+body #container nav {
+  position: fixed;
+  margin-bottom: 13em;
+  width: 97%;
+  background-color: #f72210;
+  color: white;
+  padding: 1em;
+  z-index: 2;
+}
+body #container nav .align-text-bottom {
+  margin-top: auto;
+}
+body #container nav .align-text-bottom date {
+  margin: 0;
+}
+body #container nav a {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1px;
+  padding: 0em .5em;
+}
+body #container nav .a2 {
+  background-color: white;
+  color: #f72210;
+}
+body #container nav .a2 svg {
+  width: 8px;
+  height: 14px;
+  margin-left: 5px;
+}
+body #container nav .a2 svg g {
+  fill: #f72210;
+}
+body #container nav g {
+  fill: white;
+}
+body #container .header-bottom {
+  position: fixed;
+  top: 100em;
+  left: 79.26em;
+  height: 16px;
+  width: 76px;
+  background-color: #f72210;
+  border-left: 21px solid white;
+  border-top: 16px solid #f72210;
+}
+@media screen and (max-width: 1032px) {
+  body #container .header-bottom {
+    display: none;
+  }
+}
+body #container #bar-with-anchors {
+  padding-top: 93px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+  font-weight: 700;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 2px solid #e0e0e0;
+}
+body #container #bar-with-anchors .col-sm {
+  padding: 0;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+body #container #bar-with-anchors input {
+  width: 49px;
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+body #container #bar-with-anchors a {
+  font-family: "Roboto Condensed",sans-serif;
+  border-right: 1px solid #e0e0e0;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body #container #aside-main-aside {
+  background-color: white;
+  margin: 0 -.99em;
+  padding: 1em 3em;
+  /*selecting main containers*/
+  /*selecting main containers end*/
+}
+body #container #aside-main-aside div {
+  padding: 0;
+}
+body #container #aside-main-aside div h2 {
+  font-size: 16px;
+  color: #818181;
+  font-weight: bold;
+}
+body #container #aside-main-aside div h4 {
+  font-weight: bold;
+}
+body #container #aside-main-aside .row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+body #container #aside-main-aside #stickyContainer1 {
+  right: 2em;
+}
+body #container #aside-main-aside #stickyContainer1 #featuredStories {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -80em;
+  height: 1900px;
+}
+body #container #aside-main-aside #stickyContainer1 #featuredStories .category {
+  top: 13.99em;
+  width: 7em;
+}
+body #container #aside-main-aside #topStory .category {
+  top: 18.99em;
+}
+body #container #aside-main-aside #topStory #culture-travel {
+  background: #e0e0e0;
+  border-color: #e0e0e0;
+}
+body #container #aside-main-aside #topStory #culture-travel a {
+  background: #c2d4d7;
+  font-weight: 100;
+}
+body #container #aside-main-aside #topStory #culture-travel p {
+  color: #8d8d8d;
+}
+body #container #aside-main-aside #topStory #moreStories {
+  margin-top: 1em;
+}
+body #container #aside-main-aside #topStory #moreStories .section {
+  border-bottom: 2px solid #e0e0e0;
+}
+body #container #aside-main-aside #stickyContainer2 {
+  left: 26px;
+}
+body #container #aside-main-aside #stickyContainer2 #opinion {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -80em;
+  height: 1900px;
+}
+@media screen and (max-width: 1032px) {
+  body #container #aside-main-aside #stickyContainer2 #opinion {
+    font-size: 15px;
+    height: 1500px;
+  }
+}
+body #container #aside-main-aside #stickyContainer2 #opinion #opinions {
+  margin-top: 2em;
+}
+body #container #aside-main-aside #stickyContainer2 #opinion #opinions .opinion {
+  border-bottom: 2px solid #e0e0e0;
+}
+body #container #aside-main-aside #stickyContainer2 #opinion #opinions .opinion .row {
+  font-weight: bolder;
+  color: black;
+}
+body #container #aside-main-aside #stickyContainer2 #opinion #opinions .opinion .row .author {
+  font-size: 14px;
+  color: #6d6d6d;
+}
+body #container #aside-main-aside #stickyContainer2 #opinion #opinions #latestNews {
+  margin-top: 1.5em;
+}
+body #container #aside-main-aside #stickyContainer2 #opinion #opinions #latestNews .news {
+  border-bottom: 2px solid #e0e0e0;
+}
+body #container #aside-main-aside #stickyContainer2 #opinion #sign-up-container {
+  margin-top: 7em;
+  background-color: #f4f5f6;
+  border: 1px solid #e5e5e5;
+}
+@media screen and (max-width: 1032px) {
+  body #container #aside-main-aside #stickyContainer2 #opinion #sign-up-container {
+    margin: 2em;
+    margin-left: -4em;
+  }
+}
+body #container #aside-main-aside #stickyContainer2 #opinion #sign-up-container #sign-up .col-8 p {
+  font-size: 18px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+body #container #aside-main-aside #stickyContainer2 #opinion #sign-up-container #sign-up .a2 {
+  background-color: #666666;
+  color: white;
+  padding: .5em 1em;
+}
+body #container #aside-main-aside #stickyContainer2 #opinion #sign-up-container #sign-up .a2 svg {
+  width: 8px;
+  height: 14px;
+  margin-left: 5px;
+}
+body #container #aside-main-aside #stickyContainer2 #opinion #sign-up-container #sign-up .a2 svg g {
+  fill: white;
+}
+body #container #aside-main-aside #stickyContainer2 #opinion #sign-up-container #sign-up g {
+  fill: white;
+}
+body #container h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+body #container #features .feature .row {
+  margin-top: 1em;
+  color: #f72210;
+  text-transform: uppercase;
+}
+body #container #editors-pick .row {
+  margin-top: 1em;
+}
+body #container footer {
+  background: white;
+  border-bottom: 1px solid #d6d6d6;
+  color: #666666;
+  width: 95%;
+  margin: auto;
+  margin-top: 6em;
+  font-weight: none;
+}
+body #container footer .nw-logo {
+  width: 25%;
+}
+body #container footer .nw-logo g {
+  fill: #f72210;
+}
+body #container footer p {
+  margin: 0;
+  font-size: 12px;
+  color: #a7a7a7;
+  vertical-align: bottom;
+}
+body #container footer .social {
+  font-size: 1.9em;
+  margin-left: .5em;
+}
+body #container .red-btn {
+  color: white;
+  background-color: #f72210;
+  padding: 5px 0px;
+  margin-left: 1em;
+  text-align: center;
+  font-weight: bold;
+}
